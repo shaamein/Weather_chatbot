@@ -1,0 +1,29 @@
+intents:
+  - greet
+  - bye
+  - thank
+  - inform
+
+entities:
+  - person_name
+  - location
+
+actions:
+  - utter_welcome
+  - utter_greet
+  - utter_bye
+  - action_weather
+
+responses:
+  utter_welcome:
+    - text: Welcome
+  utter_greet:
+    - text: "Hi! I'm Lynn. How can I help?"
+  utter_bye:
+    - text: Goodbye!
+  utter_ask_location:
+    - text: What city are you in?
+  
+slots:
+  location:
+      type: text
